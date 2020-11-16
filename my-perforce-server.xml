@@ -1,0 +1,64 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>perforce-server</Name>
+  <Repository>ambakshi/perforce-server</Repository>
+  <Registry>https://hub.docker.com/r/ambakshi/perforce-server/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/ambakshi/perforce-server/</Support>
+  <Project/>
+  <Overview>Perforce's Helix Versioning System (formerly P4D) 2018.2 is an enterprise version management system.</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/maxartz15/unraid-p4d-docker/master/HelixCorePerforceLogo.png?token=AGUYAULXAQ2GSERR5SXXEBK7XMGUS</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1605489374</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Description>Perforce's Helix Versioning System (formerly P4D) 2018.2 is an enterprise version management system.</Description>
+  <Networking>
+    <Mode>bridge</Mode>
+    <Publish>
+      <Port>
+        <HostPort>1666</HostPort>
+        <ContainerPort>1666</ContainerPort>
+        <Protocol>tcp</Protocol>
+      </Port>
+    </Publish>
+  </Networking>
+  <Data>
+    <Volume>
+      <HostDir>/mnt/user/appdata/perforce-server/</HostDir>
+      <ContainerDir>/data/</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+    <Volume>
+      <HostDir>/mnt/user/appdata/perforce-server/</HostDir>
+      <ContainerDir>/.p4config</ContainerDir>
+      <Mode>rw</Mode>
+    </Volume>
+  </Data>
+  <Environment>
+    <Variable>
+      <Value>p4admin</Value>
+      <Name>P4USER</Name>
+      <Mode/>
+    </Variable>
+    <Variable>
+      <Value>pass12349ers!</Value>
+      <Name>P4PASSWD</Name>
+      <Mode/>
+    </Variable>
+  </Environment>
+  <Labels/>
+  <Config Name="P4PORT" Target="1666" Default="" Mode="tcp" Description="Container Port: 1666" Type="Port" Display="always" Required="false" Mask="false">1666</Config>
+  <Config Name="DATAVOLUME" Target="/data/" Default="" Mode="rw" Description="Container Path: /data/" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/perforce-server/</Config>
+  <Config Name="P4CONFIG" Target="/.p4config" Default="" Mode="rw" Description="Container Path: /.p4config" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/perforce-server/</Config>
+  <Config Name="P4USER" Target="P4USER" Default="" Mode="" Description="Container Variable: P4USER" Type="Variable" Display="always" Required="false" Mask="false">p4admin</Config>
+  <Config Name="P4PASSWD" Target="P4PASSWD" Default="" Mode="" Description="Container Variable: P4PASSWD" Type="Variable" Display="always" Required="false" Mask="false">pass12349ers!</Config>
+</Container>
