@@ -13,7 +13,7 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:4449]</WebUI>
   <TemplateURL/>
-  <Icon>/plugins/dynamix.docker.manager/images/question.png</Icon>
+  <Icon>https://raw.githubusercontent.com/maxartz15/unraid-docker-templates/master/icons/mysterium-node.png</Icon>
   <ExtraParams>--cap-add NET_ADMIN</ExtraParams>
   <PostArgs>service --agreed-terms-and-conditions</PostArgs>
   <CPUset/>

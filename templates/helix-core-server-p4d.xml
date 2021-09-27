@@ -13,7 +13,7 @@
   <Category/>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://raw.githubusercontent.com/maxartz15/unraid-docker-templates/master/icons/helix-core-server-p4d.png?token=AGUYAUNXYGYXWPKXZHQ346C7XUDW6</Icon>
+  <Icon>https://raw.githubusercontent.com/maxartz15/unraid-docker-templates/master/icons/helix-core-server-p4d.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
