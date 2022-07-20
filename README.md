@@ -8,3 +8,4 @@ Personal use.
 | --- | --- | --- | --- |
 | helix-core-server-p4d | Perforce (P4D) server. | [xml](/templates/helix-core-server-p4d.xml) | [png](/icons/helix-core-server-p4d.png) |
 | mysterium-node | Mysterium server (node). | [xml](/templates/mysterium-node.xml) | [png](/icons/mysterium-node.png) |
+| go-ipfs | Go implementation of IPFS, the InterPlanetary FileSystem. | [xml](/templates/go-ipfs.xml) | - |

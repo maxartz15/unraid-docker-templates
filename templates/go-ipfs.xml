@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>go-ipfs</Name>
+  <Repository>ipfs/go-ipfs</Repository>
+  <Registry>https://hub.docker.com/r/ipfs/go-ipfs/</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/ipfs/go-ipfs/</Support>
+  <Project/>
+  <Overview>Go implementation of IPFS, the InterPlanetary FileSystem.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:[PORT:5001]/webui</WebUI>
+  <TemplateURL/>
+  <Icon>https://secure.gravatar.com/avatar/a105f594a3b966afa8c1d09e952d5dbd.jpg?s=80&amp;amp;r=g&amp;amp;d=404</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1658347787</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="P2P TCP/QUIC transports Port" Target="4001" Default="4001" Mode="tcp" Description="tcp" Type="Port" Display="always" Required="false" Mask="false">4001</Config>
+  <Config Name="P2P TCP/QUIC transports Port" Target="4001" Default="4001" Mode="udp" Description="udp" Type="Port" Display="always" Required="false" Mask="false">4001</Config>
+  <Config Name="RPC AP Port" Target="5001" Default="5001" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5001</Config>
+  <Config Name="Gateway" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8282</Config>
+  <Config Name="IPFS_PATH" Target="IPFS_PATH" Default="/ipfs-data" Mode="" Description="Match with Data Path" Type="Variable" Display="always" Required="false" Mask="false">/ipfs-data</Config>
+  <Config Name="IPFS_STAGING" Target="IPFS_STAGING" Default="/ipfs-staging" Mode="" Description="Match with Staging Path" Type="Variable" Display="always" Required="false" Mask="false">/ipfs-staging</Config>
+  <Config Name="Staging Path" Target="/ipfs-staging" Default="/mnt/user/ipfs/staging" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/ipfs/staging/</Config>
+  <Config Name="Data Path" Target="/ipfs-data" Default="/mnt/user/ipfs/data/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/ipfs/data/</Config>
+</Container>
